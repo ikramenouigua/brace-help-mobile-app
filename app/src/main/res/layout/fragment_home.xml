@@ -22,13 +22,14 @@
         android:id="@+id/backB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+
         android:layout_marginTop="16dp"
         android:background="?attr/selectableItemBackground"
         android:padding="8dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -38,16 +39,12 @@
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:letterSpacing="0.025"
-        android:text="Dashboard"
+        android:text="Your health informations"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/backB"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -64,7 +61,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/contributeCard"
             android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:layout_height="160dp"
             android:layout_margin="8dp"
             android:layout_marginEnd="16dp"
             android:clickable="true"
@@ -80,8 +77,8 @@
                 <ImageView
                     android:id="@+id/image_view1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/write"
+                    android:layout_height="90dp"
+                    android:src="@drawable/temperature"
                     app:layout_constraintBottom_toTopOf="@+id/textView1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -95,7 +92,7 @@
                     android:gravity="center"
                     android:text="Temperature"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/secondColor"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -103,7 +100,22 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/image_view1" />
-
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="39 degre"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -111,7 +123,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/practiceCard"
             android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:layout_height="160dp"
             android:layout_margin="8dp"
             android:layout_marginStart="16dp"
             android:clickable="true"
@@ -127,8 +139,8 @@
                 <ImageView
                     android:id="@+id/image_view20"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/practice"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tension"
                     app:layout_constraintBottom_toTopOf="@+id/textView20"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -142,7 +154,7 @@
                     android:gravity="center"
                     android:text="Tension"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/secondColor"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -150,7 +162,22 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/image_view20" />
-
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:text="12"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -171,7 +198,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/learnCard"
             android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:layout_height="148dp"
             android:layout_margin="8dp"
             android:layout_marginEnd="16dp"
             android:clickable="true"
@@ -187,8 +214,8 @@
                 <ImageView
                     android:id="@+id/image_view21"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/learn"
+                    android:layout_height="80dp"
+                    android:src="@drawable/coeur"
                     app:layout_constraintBottom_toTopOf="@+id/textView21"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -202,7 +229,7 @@
                     android:gravity="center"
                     android:text="Battement"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/secondColor"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -210,44 +237,12 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/image_view21" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/interestsCard"
-            android:layout_width="128dp"
-            android:layout_height="128dp"
-            android:layout_margin="8dp"
-            android:layout_marginStart="16dp"
-            android:clickable="true"
-            android:elevation="12dp"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="8dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image_view22"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/interests"
-                    app:layout_constraintBottom_toTopOf="@+id/textView22"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/textView11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="INTERESTS"
+                    android:text="55"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
@@ -256,11 +251,13 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view22" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
+
 
     </LinearLayout>
 

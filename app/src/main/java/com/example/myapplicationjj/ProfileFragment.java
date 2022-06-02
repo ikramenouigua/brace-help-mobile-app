@@ -1,5 +1,6 @@
 package com.example.myapplicationjj;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,7 +40,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 
 
-public class ProfileFragment extends Fragment {
+public class ProfileFragment extends Fragment implements View.OnClickListener {
 
     private TextView firstnameview, emailTxtView, weightview,phoneview ,roomnumview,heightview,ageview;
     private final String TAG = this.getClass().getName().toUpperCase();
@@ -93,5 +95,22 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+
+        edit_button.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==R.id.edit_button){
+            FragmentManager fragmentManager = getParentFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, EditProfileFragment.class, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name") // name can be null
+                    .commit();
+        }
+    }
+
+    private void finish() {
     }
 }

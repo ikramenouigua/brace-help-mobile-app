@@ -1,5 +1,6 @@
 package com.example.myapplicationjj;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.myapplicationjj.databinding.ActivityMainBinding;
@@ -20,6 +21,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.myapplicationjj.databinding.ActivityHomeBinding;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -52,6 +54,10 @@ public class HomeActivity extends AppCompatActivity {
                                 getSupportFragmentManager().beginTransaction().replace(R.id.container, profileFragment).commit();
                                 return true;
 
+                            case R.id.logout:
+                                FirebaseAuth.getInstance().signOut();
+                                startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                                return true;
                         }
 
                         return false;
