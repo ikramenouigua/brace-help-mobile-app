@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "261139956482",
+    "project_id": "refine-health-38bc2",
+    "storage_bucket": "refine-health-38bc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261139956482:android:1ae4ed074171665bfc781b",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationjj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261139956482-gcoivtjs81e4tbqtlkbftca28es1htrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaRyyHxmBwS_WTau0OxDYOf3K4xWDqudQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261139956482-gcoivtjs81e4tbqtlkbftca28es1htrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
