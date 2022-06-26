@@ -68,11 +68,11 @@ public class EditProfileFragment extends Fragment implements View.OnClickListene
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if (documentSnapshot.exists()) {
-                    emailTxtView.getEditText().setText(documentSnapshot.get("email", String.class));
+                    emailTxtView.getEditText().setText(user.getEmail());
 
                     phoneview.getEditText().setText(documentSnapshot.get("tel", String.class));
 
-                    heightview.getEditText().setText( documentSnapshot.get("poids", String.class));
+                   heightview.getEditText().setText( documentSnapshot.get("poids", String.class));
                     weightview.getEditText().setText( documentSnapshot.get("taille", String.class));
                     ageview.getEditText().setText( documentSnapshot.get("age", String.class));
 

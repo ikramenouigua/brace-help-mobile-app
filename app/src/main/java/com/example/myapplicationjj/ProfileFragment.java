@@ -84,8 +84,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
                     firstnameview.setText(documentSnapshot.get("prenom",String.class)+" "+documentSnapshot.get("nom",String.class));
                     phoneview.setText(documentSnapshot.get("tel",String.class));
                     roomnumview.setText("your room number "+documentSnapshot.get("numero_chambre",String.class));
-                    heightview.setText("your height "+documentSnapshot.get("poids",String.class));
-                    weightview.setText("your weight "+documentSnapshot.get("taille",String.class));
+                    weightview.setText("your height "+documentSnapshot.get("poids",String.class));
+                    heightview.setText("your weight "+documentSnapshot.get("taille",String.class));
                     ageview.setText("your age "+documentSnapshot.get("age",String.class));
 
 

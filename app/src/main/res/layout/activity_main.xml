@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="48dp"
-        android:text="Welcome in Rafine-Health "
+        android:text="Welcome in Brace-help "
         android:textColor="@android:color/white"
         android:textSize="26sp"
         android:textStyle="bold"
